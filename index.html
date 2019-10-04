@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Contact Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header class="center">
+            <div class="title">
+                <h1>The Code Review</h1>
+            </div>
+            
+            <div class="subtitle">    
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+         
+            </div>
+       
+        </header>
+        <main class="center">
+            <hr class="top-hr">
+            <form action="#" method="post">
+            <fieldset>
+                    <legend>Contact Information</legend>
+            
+                    <div class="flex-container">
+                <div class="flex-item-1"><label for="name">Full Name</label></div>
+                <div class="flex-item-2"><input type="text" name="name" id="name" class="field" required placeholder="Required"></div>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item-1"><label for="email">Email Address</label></div>
+                <div class="flex-item-2"><input type="email" name="email" id="email" class="field" placeholder="Required" required></div>
+            </div>
+            <div  class="flex-container">
+                <div class="flex-item-1"><label for="phone">Phone Number</label></div>
+                <div class="flex-item-2"><input type="tel" name="phone" id="phone"></div>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item-1"><label for="address">Street Address</label></div>
+                <div class="flex-item-2"><input type="text" name="address" id="address" placeholder="ex. 123 Main Street"></div>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item-1"><label for="city">City</label></div>
+                <div class="flex-item-2"><input type="text" name="city" id="city" placeholder="ex. Portland"></div>
+            </div>
+            <div class="flex-container">        
+                <div class="flex-item-1"><label for="state">State</label></div>
+                <div class="flex-item-2">
+                    <select id="state">    
+                    <option id="none" selected disabled>Choose State</option>
+                    <option id="CA">CA</option>
+                    <option id="ID">ID</option>
+                    <option id="NV">NV</option>
+                    <option id="OR">OR</option>
+                    <option id="UT">UT</option>
+                    <option id="WA">WA</option>
+                </select>
+            </div>
+            </div>
+            <div class="flex-container">
+            <div class="flex-item-1"><label for="zip">Zip Code</label> </div>
+            <div class="flex-item-2"><input type="number" name="zip" id="zip">  </div>
+        </div>
+            
+            <hr>
+    
+            </fieldset>
+            <fieldset>
+            <legend>Newsletter</legend>
+           <div>
+                <p>Select the newsletters you would like to receive</p>
+                    <input type="checkbox" name="newsletter" value="html" id="html" checked>
+                    <label class="select" for="html">HTML News</label><br>
+                    <input type="checkbox" name="newsletter" value="html" id="css">
+                    <label class="select" for="css">CSS News</label><br>
+                    <input type="checkbox" name="newsletter" value="option3" id="js">
+                    <label class="select" for="js">Javascript News</label><br>
+            </div>
+            <div>
+                <p>Newsletter format</p>
+                    <input type="radio" id="code" value="code" name="code" checked>
+                    <label class="select" for="html">HTML</label><br>
+                    <input type="radio" id="text" value="text" name="newsletter">
+                    <label class="select" for="text">Plain Text</label>
+            </div>
+            <div>
+            <p>Other topics you'd like to hear about</p>
+             <textarea name="topics" id="topics" placeholder="Enter any topics here">
+               </textarea>
+            </div>
+            <div>
+               <button type="submit">Sign Up</button>
+            </div>
+        </fieldset>
+        </form>   
+    </main>
+        
+        <footer class="center">
+            <p id="copyright">Copyright <i>The Code Review</i></p>
+
+        </footer>
+    </body>
+</html>

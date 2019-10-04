@@ -1,0 +1,160 @@
+body {
+
+    font-family: 'Merriweather', serif;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+}
+
+.title {
+    padding: 20px;
+    color: navy;
+    background-color: aqua;
+}
+
+.subtitle {
+ padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.top-hr {
+    border-top: 4px solid black;
+    border-bottom: 2px solid gray;
+    height: 3px;
+}
+
+/* Main */
+
+fieldset {
+    border: none;
+}
+
+label {
+    padding-top: 10px;
+    margin: 10px;
+}
+
+#city,
+#email,
+#phone, 
+#name,
+#address,
+select {
+    height: 50px;
+    width: 90%;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+#phone, 
+select {
+    padding-right: 20px;
+}
+
+#zip {
+    height: 50px;
+    width: 30%;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.select {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+textarea {
+    width: 90%;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+input {
+    margin-left: 10px;
+}
+
+input:focus {
+    background-color: coral;
+}
+
+#email,
+#name {
+    text-align: right;
+    padding-right: 20px;
+    font-style: italic;
+}
+
+#city,
+#address {
+    padding-left: 20px;
+}
+
+select {
+    text-indent: 20px;
+}
+
+button {
+    width: 90%;
+    background-color: aqua;
+    height: 60px;
+    border-radius: 5px;
+    color: navy;
+    font-size: 24px;
+    margin-left: 8px;
+    padding-right: 8px;
+}
+
+#copyright {
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    
+.center {    
+    max-width: 800px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#zip {
+    margin-bottom: 30px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 800px;
+}
+
+.flex-item-1 {
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+
+.flex-item-2 {
+    flex-grow: 4;
+}
+}
